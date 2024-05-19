@@ -1,0 +1,117 @@
+.container {
+  background: linear-gradient(180deg, #282641 34.5%, #6762a7 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.로고 {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+}
+.웰컴하단 {
+  position: absolute;
+  top: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.로그인 {
+  background: var(--point);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 380px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border: 3px solid #6f8dfa;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.54);
+}
+.회원가입 {
+  max-width: 380px;
+  background-color: #caccf5;
+  color: #1f2544;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border: 3px solid #6f8dfa;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.54);
+}
+.웰컴 {
+  width: 70%;
+}
+.또는 {
+  font-size: smaller;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.54);
+}
+.카카오톡 {
+  color: #ebbd26;
+}
+.시작하기 {
+  color: #d6d6d6;
+}
+.버전 {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: small;
+  color: #565867;
+}
+.안내창 {
+  position: fixed;
+  top: 20%;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(189, 212, 255, 0.886);
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  width: 90%;
+  gap: 0.5rem;
+  padding: 7rem 0rem 4rem;
+  border: solid 3px rgb(255, 255, 255);
+}
+.안내창 div {
+  color: #282641;
+}
+.확인 {
+  margin-top: 3rem;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  border: solid 3px rgb(34, 34, 34);
+}
+.확인:hover {
+  margin-top: 3rem;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  border: solid 3px rgb(240, 240, 240);
+  background-color: #282641;
+  color: white;
+}
+.전체안내창 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  max-width: 450px;
+  z-index: 2;
+}

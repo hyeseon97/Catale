@@ -1,0 +1,83 @@
+.optionContainer {
+  margin-bottom: 1.3rem;
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.optionTitle {
+  font-size: large;
+  color: #e3edff;
+}
+.titletrue {
+  font-size: large;
+  color: #a8a8a8;
+}
+
+.Button {
+  cursor: pointer;
+  /* color: blue; */
+  margin-bottom: 5px;
+}
+
+.ignoreButton {
+  cursor: pointer;
+  color: rgb(249, 149, 149);
+  margin-bottom: 5px;
+}
+
+.blurred {
+  width: 100%;
+  filter: blur(1.3px); /* 흐려지는 효과 */
+  width: 100%;
+  -webkit-appearance: none;
+  background: linear-gradient(
+    to right,
+    #cecece 0%,
+    #cecece 30%,
+    #cecece 64%,
+    #cecece 100%
+  );
+  border-radius: 4px;
+  outline: none;
+  accent-color: #1f1559;
+  padding: 0.2rem;
+  font-size: 3rem;
+}
+.otptop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rangeInput {
+  width: 100%;
+  -webkit-appearance: none;
+  background: linear-gradient(
+    to right,
+    #f8fac1 0%,
+    #effda0 30%,
+    #c5fdb8 64%,
+    #c6f6e8 100%
+  );
+  border-radius: 4px;
+  outline: none;
+  accent-color: #1f1559;
+  padding: 0.2rem;
+  font-size: 3rem;
+  box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.54);
+}
+.지금선택 {
+  display: flex;
+  justify-content: space-between;
+}
+.영백 {
+  font-size: smaller;
+  color: #a69eda;
+}
+.talktrue {
+  color: #a4a4a4;
+}
+.talkfalse {
+  color: rgb(237, 247, 255);
+}

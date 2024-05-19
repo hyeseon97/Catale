@@ -1,0 +1,20 @@
+.item {
+  position: relative;
+  width: 45%;
+  border-radius: 1rem;
+}
+.glass {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 var(--main3);
+}
+.text {
+  text-align: center;
+  font-size: smaller;
+}
+.like {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 1.5rem;
+}

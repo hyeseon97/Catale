@@ -1,0 +1,182 @@
+.glass_cover {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px -5px #181b4ce6;
+  animation: eff 1.5s infinite;
+}
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0; /* 시작 지점 */
+  }
+  20% {
+    background-position: 10% 0; /* 시작 지점 */
+  }
+  80% {
+    background-position: 90% 0; /* 시작 지점 */
+  }
+  100% {
+    background-position: 100% 0; /* 끝 지점 */
+  }
+}
+@keyframes eff {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+.등수 {
+  display: flex;
+  justify-content: flex-start;
+  width: 3rem;
+  /* background-color: red; */
+}
+.하트 {
+  display: flex;
+  justify-content: flex-end;
+  width: 3rem;
+  /* background-color: red; */
+}
+.glass {
+  width: 100%;
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+.name {
+  font-size: larger;
+  text-shadow: 0 0 5px #cdf5ff;
+  text-align: center;
+  color: #ffffff;
+  line-height: 0;
+}
+.content {
+  width: 88%;
+  height: 55px;
+  overflow: auto;
+  margin: 0 auto;
+  letter-spacing: 0.03rem;
+  line-height: 1.3em;
+  font-size: 0.75rem;
+  color: #1b3250;
+  padding-right: 0.4rem;
+}
+
+.cocktail {
+  border: solid 2px var(--main6);
+  box-shadow: 0 0 20px 0 var(--main3);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: 0.7s;
+  margin: 0.5rem;
+}
+.silver {
+  background: linear-gradient(
+    135deg,
+    #acafe4 0%,
+    #a7c8e3 25%,
+    #92c1e7 50%,
+    #bbb0d6 75%,
+    #e2c5e6 100%
+  );
+  background-size: 200% 100%;
+  animation: moveBackground 3s linear infinite alternate;
+}
+.bronze {
+  background: linear-gradient(
+    135deg,
+    #f18379 0%,
+    #eeb49d 25%,
+    #eeaf77 50%,
+    #eebb9d 75%,
+    #eea49d 100%
+  );
+  background-size: 200% 100%;
+  animation: moveBackground 3s linear infinite alternate;
+}
+.none {
+  background-color: var(--main4);
+}
+/* 수직 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 5px; /* 스크롤바 너비 */
+  margin-left: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #30336d7a; /* 스크롤바 트랙 배경색 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bce4fc71; /* 스크롤바 색상 */
+  border-radius: 5px; /* 스크롤바 모서리 반경 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fbfbfb; /* 스크롤바 호버 시 색상 */
+}
+.묶음 {
+  /* background-color: red; */
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.메인박스 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.일등 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.2rem;
+  font-size: larger;
+  animation: changeColor2 2s infinite alternate;
+}
+@keyframes changeColor2 {
+  0% {
+    color: #f3d4a8;
+  } /* 초기 색상 */
+  50% {
+    color: #fbbfaa;
+  } /* 중간 색상 */
+  100% {
+    color: #eddfa1;
+  } /* 최종 색상 */
+}
+.왕관2 {
+  width: 1.6rem;
+}
+.like {
+  width: 1.6rem;
+}
+.왼쪽 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.bottom {
+  display: flex;
+  padding: 0 0.5rem;
+  align-items: center;
+  gap: 1rem;
+}

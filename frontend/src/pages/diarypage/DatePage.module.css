@@ -1,0 +1,234 @@
+.background {
+  width: 100%;
+  min-height: 100vh;
+  /* padding: 5rem 2rem; */
+  overflow-x: hidden;
+}
+.cover {
+  background: #10214399;
+  min-height: 100vh;
+  padding: 5rem 2rem 2rem;
+}
+.detail,
+.cocktail {
+  border: solid 2px var(--main6);
+  box-shadow: 0 0 20px 0 var(--main3);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.glass_cover {
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 20px 50px -5px var(--main1);
+  animation: eff 1.5s infinite;
+}
+@keyframes eff {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+.glass {
+  width: 100%;
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+.name {
+  font-size: x-large;
+  text-shadow: 0 0 5px var(--main6);
+  text-align: center;
+  margin: 1rem;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  letter-spacing: 0.05rem;
+  line-height: 1.3em;
+  font-size: smaller;
+  color: var(--main4);
+  height: 6rem;
+  overflow-y: auto;
+}
+.cocktail_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0;
+}
+.cocktail_right,
+.cocktail_left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon {
+  width: 1.5rem;
+  transform: translateY(-0.1rem);
+}
+.cocktail_left > div {
+  padding: 0.3rem 0.5rem;
+  background: linear-gradient(0deg, #464a6d 0%, #707398 100%);
+  border-radius: 0.3rem;
+  font-size: x-small;
+  font-weight: 100;
+}
+.cocktail_right div {
+  font-size: small;
+}
+.title {
+  font-size: x-large;
+  padding: 4rem 0rem 1rem;
+}
+.mood {
+  font-size: larger;
+  padding: 0.3rem 0.6rem;
+}
+.mood1 {
+  color: var(--feel1);
+}
+.mood2 {
+  color: var(--feel2);
+}
+.mood3 {
+  color: var(--feel3);
+}
+.mood4 {
+  color: var(--feel4);
+}
+.mood5 {
+  color: var(--feel5);
+}
+
+.flip {
+  height: 28rem;
+}
+
+.card {
+  transition: 0.4s;
+  position: relative;
+}
+.detail,
+.cocktail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.7s;
+}
+.cocktail {
+  z-index: 1;
+  background: linear-gradient(180deg, #707398 0%, #464a6d 50%, #1f2544 100%);
+}
+.detail {
+  z-index: 0;
+  padding: 1rem;
+  transform: translateX(-37rem) translateY(-14rem) rotate(-30deg);
+  background-color: var(--main1);
+}
+.show_cocktail {
+  transform: translateX(0) translateY(0) rotate(0);
+}
+.show_detail {
+  transform: translateX(37rem) translateY(-14rem) rotate(30deg);
+  background-color: #00000000;
+}
+.로딩중 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 250, 216);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: larger;
+}
+.폰트들 {
+  font-size: large;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+}
+.감정들 {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0.3rem;
+}
+.trash {
+  width: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* 모달 */
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--main1);
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.5s;
+}
+.none {
+  transform: translateY(20rem);
+}
+.icon {
+  width: 1rem;
+}
+.blur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000000;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.8s;
+}
+.active {
+  background-color: #464a6d97;
+  z-index: 1;
+}
+.no {
+  z-index: -1;
+}
+/* 모달 안 */
+
+.delete_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.delete_title {
+  font-size: larger;
+}
+.delete_text {
+  text-align: center;
+}
+.delete_bottom {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 1rem 1rem;
+}
+.delete_cancel,
+.delete_delete {
+  text-align: center;
+  flex-grow: 1;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+}
+.delete_cancel {
+  background-color: var(--main2);
+}
+.delete_delete {
+  background-color: var(--no);
+}

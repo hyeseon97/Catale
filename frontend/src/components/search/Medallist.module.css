@@ -1,0 +1,100 @@
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0; /* 시작 지점 */
+  }
+  20% {
+    background-position: 10% 0; /* 시작 지점 */
+  }
+  80% {
+    background-position: 90% 0; /* 시작 지점 */
+  }
+  100% {
+    background-position: 100% 0; /* 끝 지점 */
+  }
+}
+
+.glass_cover {
+  width: 50%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px -5px #181b4ce6;
+  animation: eff 1.5s infinite;
+}
+@keyframes eff {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+.glass {
+  width: 100%;
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+.name {
+  font-size: x-large;
+  text-shadow: 0 0 5px #cdf5ff;
+  text-align: center;
+  margin: 1rem;
+  color: #ffffff;
+}
+.content {
+  width: 90%;
+  height: 80px;
+  overflow: auto;
+  margin: 0 auto;
+  letter-spacing: 0.04rem;
+  line-height: 1.3em;
+  font-size: smaller;
+  color: #1b3250;
+  padding-right: 0.4rem;
+}
+
+.cocktail {
+  border: solid 2px var(--main6);
+  box-shadow: 0 0 20px 0 var(--main3);
+  border-radius: 1rem;
+  width: 90%;
+  /* height: 300px; */
+  overflow: auto;
+  padding: 2rem 0.5rem 1rem;
+  margin: 0.5rem;
+  transition: 0.7s;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    #92dff2 0%,
+    #f3d4a8 25%,
+    #fbbfaa 50%,
+    #eddfa1 75%,
+    #a2f9e0 100%
+  );
+  background-size: 200% 100%;
+  animation: moveBackground 3s linear infinite alternate;
+}
+.메인박스 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.왕관 {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.7rem;
+  /* transform: rotate(-20deg); */
+  width: 2rem;
+}
+.like {
+  position: absolute;
+  top: 1.3rem;
+  right: 2rem;
+  width: 1.6rem;
+}

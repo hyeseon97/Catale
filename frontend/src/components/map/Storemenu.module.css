@@ -1,0 +1,95 @@
+.메뉴폰트 {
+  padding: 2rem 1rem 1rem;
+  font-size: large;
+}
+.boxtop {
+  padding: 1rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.칵테일박스박스 {
+  margin: 1rem;
+}
+.시그니쳐박스,
+.칵테일하나 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  box-shadow: 0px 0px 10px 0px rgba(172, 162, 191, 0.5);
+}
+
+.칵테일하나 {
+  background-color: rgb(48, 51, 84);
+  border: solid 2px rgb(106, 113, 142);
+}
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0; /* 시작 지점 */
+  }
+  20% {
+    background-position: 10% 0; /* 시작 지점 */
+  }
+  80% {
+    background-position: 90% 0; /* 시작 지점 */
+  }
+  100% {
+    background-position: 100% 0; /* 끝 지점 */
+  }
+}
+
+.시그니쳐박스 {
+  position: relative;
+  border: solid 2px var(--main7);
+  background: linear-gradient(
+    135deg,
+    #9c9ec6 0%,
+    #97bfdd 25%,
+    #9c9ec6 50%,
+    #c98dc2 75%,
+    #9c9ec6 100%
+  );
+  background-size: 200% 100%;
+  animation: moveBackground 3s linear infinite alternate;
+}
+.signature {
+  position: absolute;
+  top: 0rem;
+  right: 0.8rem;
+  color: var(--main1);
+  font-size: small;
+  padding: 0.3rem;
+  background-color: var(--main7);
+  border-radius: 0 0 0.2rem 0.2rem;
+}
+
+.칵테일사진 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+}
+.mid {
+  flex-grow: 1;
+}
+.칵테일가격 {
+  font-size: smaller;
+}
+.칵테일도수 {
+  font-size: smaller;
+}
+
+.칵테일이름 {
+  margin-bottom: 0.5rem;
+}
+.arrow {
+  width: 1rem;
+}
+.arrow2 {
+  width: 1rem;
+  transition: 0.3s;
+}
+.container {
+  padding-bottom: 3rem;
+}

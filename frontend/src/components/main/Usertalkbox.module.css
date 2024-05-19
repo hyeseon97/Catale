@@ -1,0 +1,97 @@
+.유저말풍선 {
+  /* width: 100%; */
+  /* max-width: 450px; */
+  font-family: "TTHakgyoansimJiugaeR";
+  width: 90%;
+  height: 140px;
+  background-color: rgba(216, 227, 245, 0.75);
+  border: solid 2px white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.54));
+  position: relative;
+}
+.말풍선위치 {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+}
+.말풍선 {
+  width: 100%;
+}
+.유저이름 {
+  font-family: "TTHakgyoansimJiugaeR";
+  position: absolute;
+  top: 14%;
+  left: 6%;
+  color: #92e3fd;
+  font-size: medium;
+  font-weight: 700;
+  -webkit-text-stroke: 0.7px rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.유저내용 div {
+  font-family: "TTHakgyoansimJiugaeR";
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: medium;
+  -webkit-text-stroke: 1.1px rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.유저다음 {
+  /* background-color: #2c6ac6; */
+  padding: 5rem 2rem 4rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  position: absolute;
+  bottom: -32%;
+  right: 0%;
+}
+.역삼각형 {
+  height: 0;
+  border-left: 0.4rem solid transparent; /* 왼쪽 변 */
+  border-right: 0.4rem solid transparent; /* 오른쪽 변 */
+  border-top: 0.8rem solid transparent; /* 위쪽 변 */
+  border-top-left-radius: 3px; /* 왼쪽 꼭지점 둥글게 */
+  border-top-right-radius: 3px; /* 오른쪽 꼭지점 둥글게 */
+  animation: changeColor 0.5s infinite alternate; /* 3초 간격으로 색상이 변경되며 반복됩니다. */
+}
+.click {
+  font-family: "TTHakgyoansimJiugaeR";
+  animation: changeColor2 0.5s infinite alternate;
+  font-size: smaller;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+@keyframes changeColor {
+  0% {
+    border-top-color: #7cc2f7;
+  } /* 초기 색상 */
+  50% {
+    border-top-color: #4896c7;
+  } /* 중간 색상 */
+  100% {
+    border-top-color: #3979da;
+  } /* 최종 색상 */
+}
+@keyframes changeColor2 {
+  0% {
+    color: #82bce6;
+  } /* 초기 색상 */
+  50% {
+    color: #4497cb;
+  } /* 중간 색상 */
+  100% {
+    color: #2c6ac6;
+  } /* 최종 색상 */
+}

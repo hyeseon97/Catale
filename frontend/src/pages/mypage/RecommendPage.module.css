@@ -1,0 +1,19 @@
+.title {
+  margin: 1rem 2rem 0;
+  padding: 4rem 0 0;
+}
+.main_title {
+  font-size: large;
+}
+.sub_title {
+  font-size: small;
+  color: var(--main4);
+  margin: 0.3rem 0;
+}
+.검색결과 {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 3rem;
+}

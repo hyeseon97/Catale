@@ -1,0 +1,35 @@
+/* .map {
+  position: fixed;
+  width: 100%;
+  max-width: 450px;
+  top: 0px;
+} */
+
+.지역이름 {
+  background: var(
+    --point,
+    linear-gradient(
+      135deg,
+      #6deefc 0%,
+      #7ab0fd 35.05%,
+      #bb7ef8 69.6%,
+      #eb75f5 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.동이름 {
+  font-size: 1.4em;
+  padding: 1em 0.6em 0.1em 0.8em;
+}
+.main {
+  background-color: #1f2544;
+  padding-bottom: 7rem;
+}
+.되니박스 {
+  padding-top: 0.1rem;
+}
+.map {
+}

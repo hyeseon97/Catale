@@ -1,0 +1,186 @@
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+.img {
+  height: 360px;
+  /* background-color: var(--main3); */
+  /* transform: scale(1.1); */
+  overflow: hidden;
+}
+.glass_cover {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+.glass {
+  width: 100%;
+  /* transform: scale(1.1); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* border-radius: 1rem; */
+  /* box-shadow: 0 10px 50px 0px var(--main1); */
+}
+
+.background {
+  width: 100%;
+  min-height: 1vh;
+}
+.cover {
+  background: #10214399;
+  min-height: 1vh;
+  padding: 2rem;
+}
+.content {
+  margin: 1rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.2em;
+}
+
+.ingredient {
+  color: var(--main5);
+  margin: 1rem 0;
+  text-align: center;
+}
+.review {
+  margin: 2rem 0;
+  font-size: x-large;
+}
+
+.like {
+  position: fixed;
+  width: 1.6rem;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  padding: 0.9rem;
+}
+
+.chart {
+  overflow: hidden;
+}
+.popup {
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  bottom: 0.5rem;
+  transform: 0.5;
+  animation: eff 1.5s infinite;
+}
+@keyframes eff {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.가게모음집 {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+.판매중인칵테일바 {
+  padding: 2rem 0rem;
+  color: #ffffff;
+  font-size: x-large;
+  /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
+}
+.가게사진 {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+.가게이름 {
+  font-size: small;
+  width: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+.가게하나 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.313);
+  border: solid 2px white;
+  padding: 0.4rem 0rem;
+  gap: 0.4rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+/* 모달 */
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--main1);
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.5s;
+}
+.none {
+  transform: translateY(20rem);
+}
+.icon {
+  width: 1rem;
+}
+.blur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000000;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.8s;
+}
+.active {
+  background-color: #464a6d97;
+  z-index: 1;
+}
+.no {
+  z-index: -1;
+}
+/* 모달 안 */
+
+.delete_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.delete_title {
+  font-size: larger;
+}
+.delete_text {
+  text-align: center;
+}
+.delete_bottom {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 1rem 1rem;
+}
+.delete_cancel,
+.delete_delete {
+  text-align: center;
+  flex-grow: 1;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+}
+.delete_cancel {
+  background-color: var(--main2);
+}
+.delete_delete {
+  background-color: var(--no);
+}

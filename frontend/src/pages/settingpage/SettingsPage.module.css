@@ -1,0 +1,209 @@
+.box {
+  background-color: var(--main2);
+  /* padding: 35vh 0; */
+  position: fixed;
+  height: 80vh;
+  color: #00000000;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  /* overflow: auto; */
+  /* position: relative; */
+}
+.변경박스 {
+  width: 80%;
+}
+.box2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+.img_box {
+  margin: 10vh auto 1rem;
+  width: 10rem;
+}
+.img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 5rem;
+}
+.profile_box {
+  height: 15rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  width: 15rem;
+  border-radius: 7.5rem;
+}
+.icon {
+  width: 1.5rem;
+}
+.img_set {
+  margin: 11rem 1rem 1rem;
+  /* height: 1rem; */
+}
+.inputButton {
+  text-align: center;
+  padding: 1rem;
+  background-color: #7ab0fd;
+}
+.dis_item,
+.item {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.item {
+  background-color: var(--main6);
+  box-shadow: 0 0 5px 0 var(--main6);
+  width: 80%;
+}
+.dis_item {
+  background-color: dimgray;
+}
+.item_text {
+  font-size: large;
+  color: var(--main2);
+}
+.item_subtext {
+  font-size: small;
+  margin-top: 0.3rem;
+  color: var(--main4);
+}
+.btn {
+  position: fixed;
+  bottom: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 80%;
+  max-width: 360px;
+  background: var(--point);
+  border-radius: 1rem;
+  color: #ffffffd6;
+  text-align: center;
+}
+.blur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000000;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.8s;
+}
+.active {
+  background-color: #464a6d97;
+  z-index: 1;
+}
+.no {
+  z-index: -1;
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--main1);
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.8s;
+}
+.none {
+  transform: translateY(30rem);
+}
+.title {
+  font-size: larger;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtitle {
+  margin: 1rem 0 0.5rem;
+  color: var(--main4);
+}
+.btn2 {
+  padding: 0.8rem;
+  margin: 1rem 0 0;
+  background: var(--point);
+  border-radius: 1rem;
+  color: #ffffffd6;
+  text-align: center;
+  font-size: large;
+}
+.input_box {
+  position: relative;
+  height: 3rem;
+}
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: var(--main2);
+  background-color: var(--main6);
+  font-size: large;
+}
+.pw {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: var(--main2);
+  background-color: var(--main6);
+  font-size: large;
+  width: calc(100% - 1rem);
+  margin-bottom: 0.5rem;
+}
+.input_check {
+  position: absolute;
+  right: 0.3rem;
+  background-color: var(--main4);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  top: 0.25rem;
+}
+input::placeholder {
+  color: var(--main4);
+}
+.error {
+  color: var(--main4);
+  font-size: small;
+}
+.icon {
+  width: 1rem;
+}
+.로딩 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(104, 104, 104, 0.473);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

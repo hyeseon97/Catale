@@ -1,0 +1,186 @@
+.button {
+  color: #1f2544;
+}
+.main {
+  margin: 1rem;
+  padding: 4rem 0 7rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.top {
+  padding: 0.5rem;
+  gap: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.검색창 {
+  flex-grow: 1;
+  border: solid 2.3px #e6e7ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2.3rem;
+  background-color: #464a6d;
+}
+.검색인풋창 {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; /* 둥근 테두리 설정 */
+  font-size: large;
+}
+
+.검색결과 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.검색결과베이비폰트 {
+  padding: 0.4rem 0rem 1rem 1rem;
+  font-size: smaller;
+  color: #9ca1d3;
+}
+.검색했을때 {
+  display: flex;
+  flex-direction: column;
+}
+.검색결과폰트 {
+  padding: 1rem 0rem 1rem 1rem;
+  font-size: larger;
+}
+.검색결과폰트2 {
+  padding: 1rem 0rem 0rem 1rem;
+  font-size: larger;
+}
+.이퀄 {
+  width: 2rem;
+}
+.돋보기 {
+  width: 1.5rem;
+  margin: 0.7rem;
+}
+
+/* -모달- */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 5rem;
+  right: 0;
+  z-index: 6;
+  background-color: #1f2544a9;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  transition: 0.8s;
+  overflow: scroll;
+}
+.none {
+  transform: translateX(100vw);
+}
+.option {
+  margin: 1rem 0;
+}
+.arrow {
+  width: 1.5rem;
+}
+.option_title {
+  font-size: large;
+}
+.option_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000000;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.8s;
+}
+.active {
+  background-color: #464a6d97;
+  z-index: 5;
+}
+.no {
+  z-index: -1;
+}
+.icon {
+  width: 1rem;
+}
+.option_text {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.option_not {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.베이스술 {
+  font-size: large;
+  color: #e3edff;
+}
+.베이스술상관노 {
+  font-size: large;
+  color: #a8a8a8;
+}
+.base_box {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.nonbase_box {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  /* filter: blur(1px); */
+}
+.base {
+  background-color: var(--main3);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--main3);
+}
+.nonbase {
+  background-color: rgb(61, 70, 196);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+}
+.redcolor {
+  color: #ff8888;
+}
+.whitecolor {
+  color: #e6e8ff;
+}
+.검색하기 {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border-radius: 4px;
+  border: 1.5px solid var(--point, #6deefc);
+  background: var(--point);
+  box-shadow: 0px 0px 20px 0px rgba(172, 162, 191, 0.5);
+}
+.selected {
+  background-color: rgb(61, 70, 196);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+}

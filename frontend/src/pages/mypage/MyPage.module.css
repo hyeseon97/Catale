@@ -1,0 +1,200 @@
+.chart {
+  width: 70%;
+  padding-top: 2rem;
+  position: relative;
+}
+.chartC {
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+.main {
+  padding: 4rem 0 6rem;
+  /* height: calc(var(--vh, 1vh) * 100); */
+}
+.recommendTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.recommend {
+  display: flex;
+  padding: 0.5rem;
+}
+.data {
+  font-size: smaller;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 3rem 0.5rem 1rem;
+}
+
+.changePreference {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  font-size: smaller;
+  align-items: center;
+}
+.changePreference div {
+  color: var(--main5);
+}
+.edit_icon {
+  width: 0.9rem;
+}
+.flex {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+.con {
+  background-color: var(--main2);
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+}
+.likeCocktail,
+.myCocktail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.arrow_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.feel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feelChart {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.lottie {
+  position: absolute;
+  width: 70%;
+  bottom: 0;
+  right: 0;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.profile_left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile_right {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.profile_email {
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--main4);
+}
+.profile_img {
+  width: 3rem;
+  object-position: center;
+  object-fit: cover;
+  height: 3rem;
+  border-radius: 1.5rem;
+}
+.setting,
+.logout {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+.button {
+  border-radius: 0.5rem;
+  background: var(--point);
+  padding: 0.3rem 0.6rem;
+  color: #ffffffc3;
+}
+
+/* 모달 */
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: var(--main1);
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.5s;
+}
+.none {
+  transform: translateY(20rem);
+}
+.icon {
+  width: 1rem;
+}
+.blur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000000;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.8s;
+}
+.active {
+  background-color: #464a6d97;
+  z-index: 1;
+}
+.no {
+  z-index: -1;
+}
+/* 모달 안 */
+
+.delete_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.delete_title {
+  font-size: larger;
+}
+.delete_text {
+  text-align: center;
+}
+.delete_bottom {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 1rem 1rem;
+}
+.delete_cancel,
+.delete_delete {
+  text-align: center;
+  flex-grow: 1;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+}
+.delete_cancel {
+  background-color: var(--main2);
+}
+.delete_delete {
+  background-color: var(--no);
+}

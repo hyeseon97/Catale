@@ -1,0 +1,80 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+}
+.glass {
+  width: 5rem;
+  border-radius: 1rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle,
+.like {
+  width: 1.5rem;
+  transition: 0.3s;
+}
+.text {
+  margin: 0 1rem;
+}
+.subtext {
+  margin: 0.5rem 1rem 0;
+  font-size: smaller;
+  color: var(--main4);
+  height: 3.9rem;
+  overflow: auto;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6rem;
+}
+.review {
+  overflow: hidden;
+  height: 0;
+  transition: min-height 0.5s ease;
+}
+.review_flex {
+  display: flex;
+  margin: 1rem 0;
+  align-items: flex-start;
+}
+
+.review_left,
+.review_text {
+  flex-grow: 1;
+}
+.star {
+  width: 1.2rem;
+  margin-right: 0.2rem;
+}
+.review_date {
+  margin-left: 0.5rem;
+  font-size: smaller;
+  color: var(--main4);
+}
+.review_top {
+  display: flex;
+  align-items: center;
+}
+.review_content {
+  margin: 0.5rem 0;
+  height: 60px;
+  overflow: auto;
+}
+.review_sweet {
+  font-size: smaller;
+  color: var(--main4);
+}
+.trash {
+  width: 1.2rem;
+}
+.hr {
+  border: solid 1px var(--main4);
+  box-shadow: 0 0 10px 0 var(--main4);
+  margin-top: 1rem;
+}

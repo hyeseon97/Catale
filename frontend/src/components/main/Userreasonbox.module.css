@@ -1,0 +1,45 @@
+.감정선택칸 {
+  /* width: 89%; */
+  position: absolute;
+  bottom: 15.3%;
+  padding: 1rem 1rem 1rem;
+  overflow: auto;
+  height: 300px;
+  margin: 1rem 1rem 0rem;
+  border: solid 2px rgb(131, 131, 131);
+  border-radius: 20px;
+  display: flex;
+  max-width: 380px;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(28, 28, 46, 0.945);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.54));
+}
+.상자하나 {
+  color: #1d1d1d;
+  padding: 0.35rem 0.74rem;
+  background-color: #edf1ff;
+  border-radius: 20px;
+  font-size: smaller;
+}
+.toast {
+  padding: 1rem;
+  background-color: rgb(88, 25, 25);
+  border: 2px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 40%;
+}
+.인풋창 {
+  padding: 0.2rem 0rem 0.2rem 0.6rem;
+  font-size: smaller;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.인풋창:focus {
+  background-color: #cdd8ff;
+  border-radius: 20px;
+  outline-color: rgb(174, 211, 234);
+}

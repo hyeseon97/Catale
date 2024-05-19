@@ -1,0 +1,41 @@
+.storeInfo {
+  background-color: #464a6d;
+  padding: 1rem;
+  /* padding-bottom: 1.5rem; */
+}
+.중간디브 {
+  height: 1.1rem;
+  background-color: #1f2544;
+}
+.정기휴무 {
+  font-size: small;
+  margin-left: 0.5rem;
+  color: var(--main4);
+}
+.box {
+  display: flex;
+  margin: 1rem 0.5rem;
+  gap: 1rem;
+}
+.box img {
+  width: 1.5rem;
+}
+.store_box {
+  margin: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.store_img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.store_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: x-small;
+}

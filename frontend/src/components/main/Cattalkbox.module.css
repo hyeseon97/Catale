@@ -1,0 +1,185 @@
+.고양이말풍선 {
+  position: absolute;
+  top: 6rem;
+  /* top: 10.6%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  max-width: 450px;
+}
+.고양이말풍선 div {
+  font-family: "TTHakgyoansimJiugaeR";
+}
+.고양이말풍선2 {
+  position: absolute;
+  top: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  max-width: 450px;
+}
+.고양이말풍선2 div {
+  font-family: "TTHakgyoansimJiugaeR";
+}
+.말풍선 {
+  width: 100%;
+  max-width: 450px;
+}
+.만들자말풍선 {
+  width: 85%;
+  height: 120px;
+  border-radius: 7px;
+  background: #040615c9;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.54));
+  position: relative;
+}
+.고양이이름 {
+  position: absolute;
+  top: 15%;
+  left: 2rem;
+  font-size: medium;
+  color: rgb(228, 144, 144);
+  -webkit-text-stroke: 1.2px rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.고양이내용 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  /* font-size: 1.1rem; */
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1.2px rgb(59, 59, 59);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.594);
+  justify-content: center;
+  margin-bottom: 3px;
+}
+.고양이내용11 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 1.1rem; */
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1.2px rgb(59, 59, 59);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.594);
+  margin-bottom: 3px;
+}
+.감정대화 {
+  display: flex;
+  gap: 0.3rem;
+}
+.고양이내용파랑 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  color: rgb(254, 254, 254);
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.여기에만 {
+  -webkit-text-stroke: 0.7px rgba(81, 81, 81, 0.265);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.파랑다음으로 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  color: rgb(247, 247, 247);
+}
+.네모박스 {
+  width: 30%;
+  border: 2px solid #404c79;
+  display: flex;
+  background-color: #c8d4ff;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+.네모박스:hover {
+  background-color: #e9eeff;
+}
+.네모박스2 {
+  width: 30%;
+  border: 2px solid #5d5d5d;
+  display: flex;
+  background-color: #d2d2d2;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+.네모박스2:hover {
+  background-color: #e9eeff;
+}
+
+.다음으로 {
+  font-size: smaller;
+  color: #1f1f1f;
+  /* -webkit-text-stroke: 0.3px rgb(255, 255, 255); */
+  /* text-shadow: 1px 1px 1px rgb(175, 175, 175); */
+}
+
+.고양이다음 {
+  /* background-color: red; */
+  padding: 5rem 2rem 5rem 2rem;
+  position: absolute;
+  bottom: -2.5rem;
+  right: -0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.역삼각형 {
+  height: 0;
+  border-left: 0.4rem solid transparent; /* 왼쪽 변 */
+  border-right: 0.4rem solid transparent; /* 오른쪽 변 */
+  border-top: 0.8rem solid transparent; /* 위쪽 변 */
+  border-top-left-radius: 3px; /* 왼쪽 꼭지점 둥글게 */
+  border-top-right-radius: 3px; /* 오른쪽 꼭지점 둥글게 */
+  animation: changeColor 0.5s infinite alternate; /* 3초 간격으로 색상이 변경되며 반복됩니다. */
+}
+.click {
+  font-family: "TTHakgyoansimJiugaeR";
+  animation: changeColor2 0.5s infinite alternate;
+  font-size: smaller;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+@keyframes changeColor {
+  0% {
+    border-top-color: #ffc5e0;
+  } /* 초기 색상 */
+  50% {
+    border-top-color: #faa0bc;
+  } /* 중간 색상 */
+  100% {
+    border-top-color: #ec8296;
+  } /* 최종 색상 */
+}
+@keyframes changeColor2 {
+  0% {
+    color: #ffc5e0;
+  } /* 초기 색상 */
+  50% {
+    color: #faa0bc;
+  } /* 중간 색상 */
+  100% {
+    color: #ec8296;
+  } /* 최종 색상 */
+}

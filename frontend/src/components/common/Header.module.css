@@ -1,0 +1,17 @@
+.header {
+  background-color: #464a6d57;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  max-width: 450px;
+}
+.text {
+  padding: 1rem;
+  font-size: x-large;
+  display: flex;
+  gap: 0.5rem;
+}

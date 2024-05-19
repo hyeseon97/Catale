@@ -1,0 +1,89 @@
+:root {
+  /* 배경색 */
+  --main1: #1f2544;
+  /* 대부분의 틀, 흰색배경의 텍스트색 */
+  --main2: #464a6d;
+  /* 칵테일이미지의 배경색 */
+  --main3: #6d6f94;
+  /* 모든 배경의 서브텍스트색 */
+  --main4: #9c9ec6;
+  /* 이미지색 */
+  --main5: #caccf5;
+  /* stroke색, 흰색배경색 */
+  --main6: #e6e7ff;
+  /* 텍스트색 */
+  --main7: #fafaff;
+
+  /* 포인트색 */
+  --point: linear-gradient(
+    135deg,
+    #6deefc 0%,
+    #7ab0fd 33%,
+    #bb7ef8 66%,
+    #eb75f5 100%
+  );
+
+  /* 취소버튼, 일요일 등등 */
+  --no: #ff9c9c;
+
+  /* 토요일, 완료 등등 */
+  --yes: #a4b8ff;
+
+  /* 기분색 */
+  --feel1: #b287f7;
+  --feel2: #e59cff;
+  --feel3: #fbdfff;
+  --feel4: #ffd4ca;
+  --feel5: #ffb0b0;
+}
+
+@font-face {
+  font-family: "TTHakgyoansimJiugaeR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimJiugaeR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+얇은 글씨 300
+기본 글씨 400
+굵은 글씨 700
+ */
+
+:root {
+  --gmarket-sans: "GongGothicMedium";
+  /* --noto-sans: -apple-system, "Noto Sans KR", sans-serif; */
+}
+
+html {
+  background-color: var(--main1);
+}
+
+textarea,
+input,
+div,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: var(--gmarket-sans);
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  color: #fafaff;
+}
+.swiper-pagination > span {
+  background-color: var(--main2);
+}

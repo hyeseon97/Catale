@@ -1,0 +1,50 @@
+.container {
+  margin-bottom: 6rem;
+}
+.box {
+  margin: 1rem 0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.nickname {
+  font-size: large;
+}
+.date {
+  font-size: small;
+  color: var(--main4);
+}
+.right {
+  width: 1.5rem;
+}
+.mid {
+  margin: 1rem 0;
+  font-size: large;
+}
+.bottom {
+  display: flex;
+  gap: 0.5rem;
+  font-size: small;
+}
+.bottom div {
+  color: var(--main4);
+}
+.hr {
+  border: solid 1px var(--main4);
+  box-shadow: 0 0 10px 0 var(--main4);
+  margin: 1rem 0;
+}

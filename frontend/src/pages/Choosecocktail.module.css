@@ -1,0 +1,38 @@
+.칵테일들 {
+  display: flex;
+  width: 30%;
+}
+.칵테일전체박스 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.좋칵 {
+  font-size: large;
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.선택박스 {
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+.pagination {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0rem;
+}
+.끝페이지 {
+  color: rgb(113, 113, 113);
+}

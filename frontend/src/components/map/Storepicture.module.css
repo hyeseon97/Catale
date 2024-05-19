@@ -1,0 +1,13 @@
+.picturemain {
+  background-color: #464a6d;
+  padding: 1rem;
+}
+.swiper {
+  width: 100%;
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+  height: 20rem;
+  border-radius: 1rem;
+}

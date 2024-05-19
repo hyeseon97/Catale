@@ -1,0 +1,27 @@
+.chartC {
+  transform: translateX(-24%);
+  /* overflow: hidden; */
+  /* width: 120%; */
+}
+.data {
+  display: flex;
+}
+.data > div {
+  flex-grow: 1;
+  text-align: center;
+  transform: translateY(-80%);
+  font-size: small;
+}
+.data p {
+  margin-top: 0.5rem;
+  font-size: large;
+}
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.icon {
+  width: 1.5rem;
+  transform: translateY(-0.2rem);
+}
